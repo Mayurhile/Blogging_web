@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">My Website</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="menuBtn" class="menu-button">☰</button>
+        </div>
+        <ul id="mobileMenu" class="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to My Website</h1>
+            <h3>Your one-stop solution for web design</h3>
+        </div>
+    </section>
+
+    <!-- Question Page -->
+    <section class="question-container">
+        <div class="question">
+            <p>djvioh idgj ed pfojiea poijgf </p>
+        </div>
+        <div cards>
+            <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
+                  </div>
+                  <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
+                  <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+                </div>
+              </a>
+              
+              <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+                <div class="card">
+                  <div class="wrapper">
+                    <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+                  </div>
+                  <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+                  <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+                </div>
+              </a>
+        </div>
+    </section>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            document.getElementById('mobileMenu').classList.toggle('show');
+        });
+
+        // Alert for selected option
+        function selectOption(choice) {
+            alert("You selected: " + choice);
+        }
+    </script>
+
+</body>
+</html>
